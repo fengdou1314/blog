@@ -36,7 +36,7 @@ class Kernel extends HttpKernel
         ],
 
         //admin端
-        'admin'=>[
+        'adminController' =>[
             \App\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,

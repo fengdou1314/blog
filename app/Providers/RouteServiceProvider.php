@@ -112,7 +112,7 @@ class RouteServiceProvider extends ServiceProvider
             case $adminUrl:
                  $router->group([
                     'namespace' => $this->namespace,
-                    'middleware' => 'admin',
+                    'middleware' => 'adminController',
                  ], function ($router) {
                     require app_path('Http/routes_admin.php');
                  });
