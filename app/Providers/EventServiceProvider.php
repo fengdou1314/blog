@@ -16,6 +16,13 @@ class EventServiceProvider extends ServiceProvider
         'App\Events\SomeEvent' => [
             'App\Listeners\EventListener',
         ],
+
+        //2017-12-13 新增把查询数据库的sql写入日志
+        //--start--
+        'Illuminate\Database\Events\QueryExecuted' => [
+            'App\Listeners\QueryListener'
+        ],
+        //--end--
     ];
 
     /**

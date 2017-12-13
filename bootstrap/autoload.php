@@ -32,3 +32,11 @@ $compiledPath = __DIR__.'/cache/compiled.php';
 if (file_exists($compiledPath)) {
     require $compiledPath;
 }
+
+
+/*--------------------------------------------------------------------------
+ * 2017-12-13
+ * 引入自定义函数
+ * -------------------------------------------------------------------------
+ */
+require __DIR__.'/../app/Helpers/function.php';
